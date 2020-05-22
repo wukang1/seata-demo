@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: sd-account
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost/seat-account?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    username: root
+    password: root
+server:
+  port: 8081
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+mybatis:
+  type-aliases-package: cn.tedu.sdaccount.entity
+  mapper-locations:
+    - classpath:/mapper/*Mapper.xml
+  configuration:
+    map-underscore-to-camel-case: true
