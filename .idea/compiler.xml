@@ -8,8 +8,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="sd-account" />
-        <module name="seata-demo" />
         <module name="sd-eureka" />
+        <module name="sd-storage" />
+        <module name="sd-order" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -21,6 +22,8 @@
       <module name="demo" options="-parameters" />
       <module name="sd-account" options="-parameters" />
       <module name="sd-eureka" options="-parameters" />
+      <module name="sd-order" options="-parameters" />
+      <module name="sd-storage" options="-parameters" />
       <module name="seata-demo" options="-parameters" />
     </option>
   </component>
