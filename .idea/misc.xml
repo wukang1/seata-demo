@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/sd-account/pom.xml" />
         <option value="$PROJECT_DIR$/sd-storage/pom.xml" />
         <option value="$PROJECT_DIR$/sd-order/pom.xml" />
+        <option value="$PROJECT_DIR$/sd-sql-script/pom.xml" />
       </list>
     </option>
   </component>
