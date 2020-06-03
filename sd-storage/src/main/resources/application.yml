@@ -1,11 +1,16 @@
 spring:
-  application:
-    name: sd-storage
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost/seat-storage?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
     username: root
     password: root
+  cloud:
+    alibaba:
+      seata:
+        tx-service-group: my_test_tx_group
+  application:
+    name: sd-storage
+
 server:
   port: 8082
 
@@ -14,6 +19,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
 
 mybatis:
   type-aliases-package: cn.tedu.sdstorage.entity

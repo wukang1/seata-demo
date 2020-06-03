@@ -10,7 +10,9 @@ public class StorageServiceImpl implements StorageService {
     private StorageMapper storageMapper;
 
     @Override
-    public void decrease(Long productId, Integer count) {
+    public void decrease(Long productId, Integer count) throws Exception {
         storageMapper.decrease(productId,count);
+
+        Thread.sleep(30000);
     }
 }

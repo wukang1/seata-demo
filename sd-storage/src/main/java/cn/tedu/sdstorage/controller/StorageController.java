@@ -11,7 +11,7 @@ public class StorageController {
     private StorageService storageService;
 
     @GetMapping("/decrease")
-    public String decrease(Long productId, Integer count) {
+    public String decrease(Long productId, Integer count) throws Exception {
         storageService.decrease(productId,count);
         return "product decrease success";
     }
