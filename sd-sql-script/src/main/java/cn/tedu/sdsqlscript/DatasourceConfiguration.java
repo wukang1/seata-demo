@@ -7,6 +7,14 @@ import org.springframework.context.annotation.Configuration;
 
 import javax.sql.DataSource;
 
+ /**
+  * @Title: DatasourceConfiguration
+  * @Package cn.tedu.sdsqlscript
+  * @Description: 读取数据库配置创建数据库连接
+  * @author wukang
+  * @date 2020/10/9
+  * @version V1.0
+  */
 @Configuration
 public class DatasourceConfiguration {
     @Bean

@@ -6,6 +6,15 @@ import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 
+
+/**
+ * @Title: Account
+ * @Package cn.tedu.sdaccount.entity
+ * @Description: 账户信息实体
+ * @author wukang
+ * @date 2020/10/9
+ * @version V1.0
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

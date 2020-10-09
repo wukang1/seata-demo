@@ -6,6 +6,15 @@ import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 
+
+/**
+ * @Title: AccountServiceImpl
+ * @Package cn.tedu.sdaccount.service
+ * @Description: (用一句话描述)
+ * @author wukang
+ * @date 2020/10/9
+ * @version V1.0
+ */
 @Service
 public class AccountServiceImpl implements AccountService {
     @Autowired

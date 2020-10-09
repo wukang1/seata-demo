@@ -13,6 +13,15 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 import javax.sql.DataSource;
 
+
+/**
+ * @Title: DatasourceConfiguration
+ * @Package cn.tedu.sdaccount
+ * @Description: 代理数据源
+ * @author wukang
+ * @date 2020/10/9
+ * @version V1.0
+ */
 @Configuration
 public class DatasourceConfiguration {
 

@@ -8,6 +8,7 @@
     <result column="used" property="used" jdbcType="INTEGER" />
     <result column="residue" property="residue" jdbcType="INTEGER" />
   </resultMap>
+
   <update id="decrease">
     UPDATE storage SET used = used + #{count},residue = residue - #{count} WHERE product_id = #{productId}
   </update>

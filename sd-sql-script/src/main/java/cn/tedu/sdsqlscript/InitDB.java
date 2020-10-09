@@ -11,6 +11,15 @@ import org.springframework.jdbc.datasource.init.ScriptUtils;
 import javax.sql.DataSource;
 import java.sql.SQLException;
 
+
+/**
+ * @Title: InitDB
+ * @Package cn.tedu.sdsqlscript
+ * @Description: 读取sql文件创建数据库表
+ * @author wukang
+ * @date 2020/10/9
+ * @version V1.0
+ */
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 public class InitDB {
     public static void main(String[] args) throws SQLException {

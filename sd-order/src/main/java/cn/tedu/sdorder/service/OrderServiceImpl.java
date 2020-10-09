@@ -8,6 +8,15 @@ import io.seata.spring.annotation.GlobalTransactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+
+/**
+ * @Title: OrderServiceImpl
+ * @Package cn.tedu.sdorder.service
+ * @Description: 订单业务逻辑层
+ * @author wukang
+ * @date 2020/10/9
+ * @version V1.0
+ */
 @Service
 public class OrderServiceImpl implements OrderService {
     @Autowired
