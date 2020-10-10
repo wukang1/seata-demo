@@ -17,6 +17,7 @@ import javax.sql.DataSource;
   */
 @Configuration
 public class DatasourceConfiguration {
+
     @Bean
     @ConfigurationProperties(prefix = "spring.datasource.account")
     public DataSource accountDatasource() {
