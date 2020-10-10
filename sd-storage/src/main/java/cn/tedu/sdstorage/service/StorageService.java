@@ -1,5 +1,14 @@
 package cn.tedu.sdstorage.service;
 
+
+/**
+ * @Title: StorageService
+ * @Package cn.tedu.sdstorage.service
+ * @Description: 库存service
+ * @author wukang
+ * @date 2020/10/10
+ * @version V1.0
+ */
 public interface StorageService {
 
     /**

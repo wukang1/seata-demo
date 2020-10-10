@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 /**
  * @Title: StorageServiceImpl
  * @Package cn.tedu.sdstorage.service
- * @Description: (用一句话描述)
+ * @Description: 库存service实现类
  * @author wukang
  * @date 2020/10/9
  * @version V1.0
@@ -22,10 +22,10 @@ public class StorageServiceImpl  implements StorageService {
 
     @Override
     public void decrease(Long productId, Integer count) throws Exception {
-//        Storage storage = storageMapper.selectStorageByProductId(productId);
-//        if(storage.getResidue()-count<0){
-//            throw new Exception("库存不足");
-//        }
+        Storage storage = storageMapper.selectStorageByProductId(productId);
+        if(storage.getResidue()-count<0){
+            throw new Exception("库存不足");
+        }
         storageMapper.decrease(productId,count);
 //        Thread.sleep(30000);
     }
