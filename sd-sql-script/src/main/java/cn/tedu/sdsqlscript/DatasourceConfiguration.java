@@ -37,4 +37,5 @@ public class DatasourceConfiguration {
     public DataSource seataDatasource() {
         return DataSourceBuilder.create().build();
     }
+
 }
