@@ -2,6 +2,7 @@ package cn.tedu.sdstorage.mapper;
 
 import cn.tedu.sdstorage.entity.Storage;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 
@@ -21,5 +22,13 @@ public interface StorageMapper extends BaseMapper<Storage> {
      * @param productId
      * @param count
      */
-    void decrease(Long productId, Integer count);
+    void decrease(@Param("productId") Long productId,
+                  @Param("count") Integer count);
+
+    /**
+     * 根据商品id查询单个商品
+     * @param productId
+     * @return
+     */
+    Storage selectStorageByProductId(@Param("productId") Long productId);
 }

@@ -4,6 +4,7 @@ import cn.tedu.sdorder.entity.Order;
 import cn.tedu.sdorder.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
@@ -27,7 +28,7 @@ public class OrderController {
      * @param order
      * @return
      */
-    @GetMapping("/create")
+    @PostMapping("/create")
     public String create(Order order) {
         orderService.create(order);
         return "create order success";

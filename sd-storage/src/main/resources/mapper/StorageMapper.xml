@@ -9,7 +9,18 @@
     <result column="residue" property="residue" jdbcType="INTEGER" />
   </resultMap>
 
+  <sql id="simple_cloum">
+    id,product_id,total,used,residue
+  </sql>
+
   <update id="decrease">
     UPDATE storage SET used = used + #{count},residue = residue - #{count} WHERE product_id = #{productId}
   </update>
+
+
+  <select id="selectStorageByProductId" resultType="cn.tedu.sdstorage.entity.Storage">
+    SELECT
+      <include refid="simple_cloum"/>
+    FROM storage
+  </select>
 </mapper>

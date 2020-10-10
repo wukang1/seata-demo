@@ -2,7 +2,7 @@ package cn.tedu.sdaccount.mapper;
 
 import cn.tedu.sdaccount.entity.Account;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import org.apache.ibatis.annotations.Update;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.math.BigDecimal;
@@ -24,5 +24,6 @@ public interface AccountMapper extends BaseMapper<Account> {
      * @param userId
      * @param money
      */
-    void decrease(Long userId, BigDecimal money);
+    void decrease(@Param("userId") Long userId,
+                  @Param("money") BigDecimal money);
 }

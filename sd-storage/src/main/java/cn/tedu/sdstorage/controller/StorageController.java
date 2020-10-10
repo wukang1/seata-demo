@@ -3,6 +3,7 @@ package cn.tedu.sdstorage.controller;
 import cn.tedu.sdstorage.service.StorageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
@@ -26,7 +27,7 @@ public class StorageController {
      * @return
      * @throws Exception
      */
-    @GetMapping("/decrease")
+    @PostMapping("/decrease")
     public String decrease(Long productId, Integer count) throws Exception {
         storageService.decrease(productId,count);
         return "product decrease success";
